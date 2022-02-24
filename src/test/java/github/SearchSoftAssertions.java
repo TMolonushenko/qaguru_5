@@ -13,15 +13,11 @@ import static org.openqa.selenium.remote.tracing.EventAttribute.setValue;
 
 public class SearchSoftAssertions {
     PageObjectsSoftAssertions pageObjectsSoftAssertions = new PageObjectsSoftAssertions();
-
     String wikiFilter = "SoftAssertions";
 
     @Test
     void shouldSoftAssetionsInWikiGithub() {
-
-
         open("https://github.com/selenide/selenide");
-
         pageObjectsSoftAssertions.clickWiki();
         pageObjectsSoftAssertions.checkSoftAssertions(wikiFilter);
         pageObjectsSoftAssertions.goSoftAssertions();

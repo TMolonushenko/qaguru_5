@@ -13,7 +13,7 @@ public class SearchSelenideRepo {
         open("https://github.com/");
         //ввести в поле поиска selenide и нажать enter
         $("[data-test-selector='nav-search-input']").setValue("selenide").pressEnter();
-        $$(".repo-list li").first().$("a").click();
+        $(".repo-list li").$("a").click();
         // нажимаем на линк от первого результата поиска
         //check : в заголовке встречаются selenide/selenide
         $("h1").shouldHave(text("selenide / selenide"));
