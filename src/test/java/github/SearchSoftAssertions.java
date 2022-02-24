@@ -21,6 +21,6 @@ public class SearchSoftAssertions {
         pageObjectsSoftAssertions.clickWiki();
         pageObjectsSoftAssertions.checkSoftAssertions(wikiFilter);
         pageObjectsSoftAssertions.goSoftAssertions();
-        pageObjectsSoftAssertions.checkJUnit5();
+        pageObjectsSoftAssertions.resultOutJUnit5();
     }
 }
